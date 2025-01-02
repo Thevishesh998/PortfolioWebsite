@@ -1,57 +1,61 @@
 import React from "react";
 import html from "../../public/html.png";
 import css from "../../public/css.jpg";
-import java from "../../public/java.png";
 import javascript from "../../public/javascript.png";
-import oracle from "../../public/oracle.png";
-import spring from "../../public/spring.png";
-import springBoot from "../../public/springBoot.jpg";
+import reactjs from "../../public/reactjs.png";
+import python from "../../public/python.webp";
+import java from "../../public/java.png";
+import mongodb from "../../public/mongoDB.jpg";
+import nodejs from "../../public/node.png";
+
 function Experiance() {
   const cardItem = [
     {
       id: 1,
       logo: html,
-      name: "Html",
+      name: "HTML",
     },
     {
       id: 2,
       logo: css,
-      name: "Css",
+      name: "CSS",
     },
     {
       id: 3,
+      logo: javascript,
+      name: "JavaScript",
+    },
+    {
+      id: 4,
+      logo: reactjs,
+      name: "ReactJS",
+    },
+    {
+      id: 5,
+      logo: python,
+      name: "Python",
+    },
+    {
+      id: 6,
       logo: java,
       name: "Java",
     },
     {
-      id: 4,
-      logo: javascript,
-      name: "Javascript",
-    },
-    {
-      id: 5,
-      logo: oracle,
-      name: "Oracle",
-    },
-    {
-      id: 6,
-      logo: spring,
-      name: "Spring",
-    },
-    {
       id: 7,
-      logo: springBoot,
-      name: "SpringBoot",
+      logo: mongodb,
+      name: "MongoDB",
+    },
+    {
+      id: 8,
+      logo: nodejs,
+      name: "NodeJS",
     },
   ];
+
   return (
-    <div name="Experiance" className="max-w-screen-2xl mx-auto px-4 md:px-20 my-20 ">
+    <div name="Experiance" className="max-w-screen-2xl mx-auto px-4 md:px-20 my-20">
       <div>
-        <h1 className="text-3xl font-bold mb-5">Experiance</h1>
-        <p className="">
-          {" "}
-          I've more than 2 years of experiance in below technologies.
-        </p>
+        <h1 className="text-3xl font-bold mb-5">Experience</h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-7 my-5">
           {cardItem.map(({ id, logo, name }) => (
             <div
@@ -60,12 +64,11 @@ function Experiance() {
             >
               <img
                 src={logo}
-                className="w-[130px]   rounded-full "
-                alt=""
+                className="w-[130px] rounded-full"
+                alt={`${name} logo`}
               />
-              <div>
-                <div className=" ">{name}</div>
-                
+              <div className="text-center mt-2">
+                <div className="font-bold text-lg">{name}</div>
               </div>
             </div>
           ))}

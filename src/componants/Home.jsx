@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../../public/photo.avif";
+import pic from "../../public/vishesh-removebg.png";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
@@ -30,10 +30,11 @@ function Home() {
             </div>
             <br />
             <p className="md:text-sm md:text-md text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              aliquid eligendi, voluptate natus molestiae unde expedita aliquam
-              provident nam. Quis iste voluptatum accusantium debitis nostrum?
-              Repellat adipisci soluta facere aspernatur.
+            Hi, I’m Vishesh Singh!
+I’m an aspiring web developer with a passion for creating interactive, user-friendly, and visually appealing websites. My goal is to combine creativity and technical skills to solve real-world problems and make an impact through web development.
+<br />
+<br />
+Welcome to my portfolio – where you can explore my journey, skills, and projects! Let’s build something amazing together.
             </p>
             <br />
             {/* social media icons*/}
@@ -65,7 +66,7 @@ function Home() {
                 </ul>
               </div>
               <div className="space-y-2">
-                <h1 className="font-bold">Corrently working on</h1>
+                <h1 className="font-bold">Currently working on</h1>
                 <div className="flex space-x-5">
                   <SiMongodb className=" text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
                   <SiExpress className=" text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
@@ -78,7 +79,7 @@ function Home() {
           <div className="md:w-1/2 md:ml-40 md:mt-20 mt-8 order-1">
             <img
               src={pic}
-              className="rounded-full md:w-[450px] md:h-[450px]"
+              className=" rounded-full md:w-[450px] md:h-[450px]"
               alt=""
             />
           </div>
